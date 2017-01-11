@@ -1,0 +1,8 @@
+version: '2'
+services:
+  scfsolr:
+    image: solr
+    ports:
+      - "32333:8983"
+    volumes:
+      - ./solrheap.sh:/docker-entrypoint-initdb.d/set-heap.sh
